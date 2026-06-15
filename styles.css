@@ -67,3 +67,62 @@
 .footer img[src$="logo-group-one.webp"]{height:58px;width:auto;max-width:260px;object-fit:contain;}
 @media(max-width:980px){.brand img{height:58px;max-width:260px;}}
 @media(max-width:560px){.brand img{height:46px;max-width:210px;}.footer img[src$="logo-group-one.webp"]{height:48px;max-width:220px;}}
+
+/* V9 final ajuste visual: logo principal + baldosas de industrias */
+.topbar{
+  height:104px!important;
+  min-height:104px!important;
+}
+.brand img{
+  height:84px!important;
+  width:auto!important;
+  max-width:430px!important;
+  object-fit:contain!important;
+}
+.industry-grid article{
+  min-height:210px!important;
+  padding:18px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  background:radial-gradient(circle at 50% 18%,rgba(65,139,202,.18),transparent 42%),linear-gradient(180deg,#0b2035,#071523)!important;
+  border:1px solid #1e4d75!important;
+  box-shadow:inset 0 0 0 1px rgba(132,200,255,.06),0 10px 32px rgba(0,0,0,.18)!important;
+}
+.industry-icon{
+  width:126px!important;
+  height:126px!important;
+  margin:0 auto 18px!important;
+  opacity:1!important;
+  display:block!important;
+  background-color:transparent!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+  background-size:contain!important;
+  border:0!important;
+  box-shadow:none!important;
+  mix-blend-mode:normal!important;
+  filter:drop-shadow(0 0 12px rgba(132,200,255,.12))!important;
+}
+.industry-icon.petrolera{background-image:url('assets/industry-petrolera-v5.webp')!important;}
+.industry-icon.alimentos{background-image:url('assets/industry-alimentos-v5.webp')!important;}
+.industry-icon.construccion{background-image:url('assets/industry-construccion-v5.webp')!important;}
+.industry-icon.mineria{background-image:url('assets/industry-mineria-v5.webp')!important;}
+.industry-icon.farmaceutica{background-image:url('assets/industry-farmaceutica-v5.webp')!important;}
+.industry-icon.textil{background-image:url('assets/industry-textil-v5.webp')!important;}
+.industry-icon.higiene{background-image:url('assets/industry-higiene-v5.webp')!important;}
+.industry-icon.automotriz{background-image:url('assets/industry-automotriz-v5.webp')!important;}
+.industry-icon.medica{background-image:url('assets/industry-medica-v5.webp')!important;}
+.industry-icon.energetica{background-image:url('assets/industry-energetica-v5.webp')!important;}
+@media(max-width:980px){
+  .topbar{height:auto!important;min-height:86px!important;}
+  .brand img{height:64px!important;max-width:300px!important;}
+  .industry-grid article{min-height:176px!important;}
+  .industry-icon{width:104px!important;height:104px!important;}
+}
+@media(max-width:560px){
+  .brand img{height:50px!important;max-width:230px!important;}
+  .industry-grid article{min-height:148px!important;padding:12px!important;}
+  .industry-icon{width:78px!important;height:78px!important;margin-bottom:12px!important;}
+}
