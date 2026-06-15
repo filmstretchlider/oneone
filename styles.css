@@ -126,3 +126,33 @@
   .industry-grid article{min-height:148px!important;padding:12px!important;}
   .industry-icon{width:78px!important;height:78px!important;margin-bottom:12px!important;}
 }
+
+
+/* V9 final: header, zoom and resource PDF links */
+.pdf-downloads{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0 32px;}
+.pdf-card{display:flex;flex-direction:column;gap:10px;background:linear-gradient(180deg,#0b2138,#071523);border:1px solid #1e4d75;border-radius:10px;padding:22px;box-shadow:0 12px 34px rgba(0,0,0,.22);}
+.pdf-card strong{text-transform:uppercase;letter-spacing:.08em;color:#fff;font-size:15px;}
+.pdf-card span{color:#c5d5e8;line-height:1.45;font-size:14px;}
+.pdf-card .btn{margin-top:auto;width:max-content;}
+.main-nav{gap:20px;flex-wrap:nowrap;}
+.main-nav a{font-size:13px;white-space:nowrap;}
+.industry-grid article{background:linear-gradient(180deg,#0b2138,#071523)!important;overflow:hidden;}
+.industry-icon{background-color:transparent!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important;mix-blend-mode:normal!important;}
+.industry-icon.petrolera{background-image:url('assets/industry-petrolera-v5.webp')!important;}
+.industry-icon.alimentos{background-image:url('assets/industry-alimentos-v5.webp')!important;}
+.industry-icon.construccion{background-image:url('assets/industry-construccion-v5.webp')!important;}
+.industry-icon.mineria{background-image:url('assets/industry-mineria-v5.webp')!important;}
+.industry-icon.farmaceutica{background-image:url('assets/industry-farmaceutica-v5.webp')!important;}
+.industry-icon.textil{background-image:url('assets/industry-textil-v5.webp')!important;}
+.industry-icon.higiene{background-image:url('assets/industry-higiene-v5.webp')!important;}
+.industry-icon.automotriz{background-image:url('assets/industry-automotriz-v5.webp')!important;}
+.industry-icon.medica{background-image:url('assets/industry-medica-v5.webp')!important;}
+.industry-icon.energetica{background-image:url('assets/industry-energetica-v5.webp')!important;}
+@media(max-width:860px){
+  .menu-toggle{display:block;margin-left:auto;}
+  .main-nav{display:none;position:absolute;left:0;right:0;top:100%;background:#07111d;border-bottom:1px solid var(--line);padding:18px;gap:14px;flex-direction:column;align-items:flex-start;}
+  .menu-open .main-nav{display:flex;}
+  .pdf-downloads{grid-template-columns:1fr;}
+}
+@media(min-width:861px){.menu-toggle{display:none!important}.main-nav{display:flex!important}}
+@media(max-width:560px){.pdf-card .btn{width:100%;}}
