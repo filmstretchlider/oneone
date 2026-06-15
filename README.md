@@ -14,3 +14,14 @@ Subí todos los archivos a la raíz del repo y activá GitHub Pages desde Settin
 
 ## Video hero
 Se agregó `assets/hero-video.mp4`, acelerado 1.3x, sin audio y comprimido para web. `assets/hero-poster.webp` queda como fallback.
+
+
+## Versión v7
+- Incoterms y Contenedores quedaron como guías SEO orientativas, no como manual técnico principal.
+- Home mantiene enfoque comercial: confianza, solución y tranquilidad.
+- Se corrigió el estilo de baldosas/tarjetas técnicas para que no se vean planas ni rotas.
+- El material técnico queda disponible como respaldo sin obligar al cliente a elegir opciones de catálogo.
+
+## V8
+- Logo principal corregido: se reemplazó el isotipo SVG por el logo completo acordado en formato WebP (`assets/logo-group-one.webp`).
+- Header y footer actualizados para usar el logo completo sin deformarlo.
