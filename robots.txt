@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://TU-USUARIO.github.io/group-one/sitemap.xml
+Sitemap: https://filmstretchlider.github.io/oneone/sitemap.xml
