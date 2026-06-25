@@ -6,43 +6,79 @@
   <title>Group One | Freight Forwarders y Courier Internacional</title>
   <meta name="description" content="Group One: Freight Forwarders y Courier Internacional. Coordinamos importaciones, exportaciones, logística, aduana y cargas internacionales de punta a punta.">
   <meta name="theme-color" content="#081421">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .topbar{position:relative}
+    .topbar{position:relative;height:98px}
+    .brand img{height:76px;width:auto}
     .main-nav{gap:18px}
     .main-nav a{font-size:14px}
-    .hero-copy-strong{color:#ff5c55;text-transform:uppercase;font-size:14px;font-weight:950;letter-spacing:.03em;margin:14px 0 8px;display:block;max-width:760px}
-    .hero p{margin-top:0;max-width:780px}
+
+    .hero p{margin-top:14px;max-width:780px}
+
     .about .lead-center{display:none}
     .about-grid article{min-height:228px}
+
     .stats-grid{align-items:center}
     .stats-heading{text-align:center}
-    .stats-heading b{display:block;font-size:clamp(26px,3.6vw,46px);line-height:1.02;text-transform:uppercase;letter-spacing:-.03em}
+    .stats-heading b{display:block;font-size:clamp(28px,3.9vw,50px);line-height:1.02;text-transform:uppercase;letter-spacing:-.03em}
     .stats-heading span{display:block;margin-top:6px;text-transform:uppercase;font-size:14px;font-weight:900;letter-spacing:.08em;color:#dcecff}
+
     .industry-hero h2,.industry-hero p{display:none}
     .industry-hero{margin-bottom:18px}
+
     .resources .resources-lead{display:none}
     .resources .section-head h2{font-size:clamp(34px,5vw,54px);line-height:.95;margin:0;max-width:760px}
     .resources .pdf-card{min-height:120px}
     .resources .pdf-card strong{display:block;margin-bottom:10px}
     .resources .pdf-card span{display:block}
-    .custom-svg{display:flex;align-items:center;justify-content:center;padding:6px;background:linear-gradient(180deg,#f5f5f5,#d9d9d9);border-radius:2px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+
+    .custom-svg{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:0;
+      background:transparent;
+      border-radius:0;
+      box-shadow:none;
+      opacity:1;
+      filter:drop-shadow(0 0 12px rgba(132,200,255,.16));
+    }
     .custom-svg svg{width:100%;height:100%;display:block}
+    .custom-svg .line-main{stroke:#86c7ff}
+    .custom-svg .line-soft{stroke:#d7ecff}
+
     .whatsapp-float{width:58px;height:58px;padding:0;border-radius:999px;display:flex;align-items:center;justify-content:center;background:#25D366;box-shadow:0 12px 28px rgba(0,0,0,.35),0 0 20px rgba(37,211,102,.35)}
     .whatsapp-float svg{width:30px;height:30px;display:block;fill:#fff}
     .whatsapp-float .wa-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
     .footer-grid{align-items:start}
     .footer-grid>div:first-child p{margin-top:10px}
     .footer-grid a{display:block;margin:8px 0}
-    @media(max-width:980px){.main-nav a{font-size:13px}.about-grid article{min-height:auto}.stats-heading b{font-size:34px}.stats-heading span{font-size:13px}}
+
+    @media(max-width:980px){
+      .topbar{height:auto;min-height:78px}
+      .brand img{height:62px}
+      .main-nav a{font-size:13px}
+      .about-grid article{min-height:auto}
+      .stats-heading b{font-size:34px}
+      .stats-heading span{font-size:13px}
+    }
+
+    @media(max-width:560px){
+      .brand img{height:52px}
+    }
   </style>
 </head>
+
 <body>
   <header class="topbar">
     <a class="brand" href="index.html" aria-label="Group One inicio">
       <img src="assets/logo-group-one.webp" width="300" height="76" alt="Group One Logística Internacional">
     </a>
+
     <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
     <nav class="main-nav" aria-label="Navegación principal">
       <a href="index.html">Inicio</a>
       <a href="nosotros.html">Nosotros</a>
@@ -66,11 +102,12 @@
       <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-poster.webp" aria-hidden="true">
         <source src="assets/hero-video.mp4" type="video/mp4">
       </video>
+
       <div class="hero-content">
         <span class="eyebrow">Comercio internacional</span>
         <h1>GROUP ONE</h1>
-        <span class="hero-copy-strong">Nos especializamos en comercio internacional desde hace más de 15 años.</span>
         <p>Importá y exportá sin complicaciones. Menos costos, menos demoras y más eficiencia en cada operación.</p>
+
         <div class="hero-actions">
           <a class="btn primary wa-link" href="https://wa.me/5491154158757?text=Hola%20Group%20One%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">Solicitar cotización</a>
           <a class="btn secondary" href="#servicios">Ver servicios</a>
@@ -81,15 +118,18 @@
     <section class="section about" id="nosotros-resumen">
       <div class="container">
         <p class="lead-center">Con más de 20 años de trayectoria en el área aduanera, logística y comercio exterior, nos especializamos en dar servicios únicos adaptados a las necesidades de cada cliente, ocupándonos de cada etapa operativa con seguridad, eficiencia y trazabilidad.</p>
+
         <div class="about-grid">
           <article>
             <h3>Misión</h3>
             <p>Facilitar el acceso al comercio internacional a empresas de todos los tamaños, brindando soluciones integrales, asesoramiento experto y gestión de punta a punta.</p>
           </article>
+
           <article>
             <h3>Visión</h3>
             <p>Convertirnos en la consultora líder en comercio internacional, reconocida por simplificar operaciones globales y generar crecimiento sostenible para nuestros clientes.</p>
           </article>
+
           <article>
             <h3>Valores</h3>
             <p>Experiencia, confianza, integridad, innovación y compromiso. Más de 15 años impulsando negocios y construyendo relaciones de largo plazo.</p>
@@ -100,10 +140,25 @@
 
     <section class="stats" aria-label="Group One en cifras">
       <div class="container stats-grid">
-        <div><b class="counter" data-target="800">+800</b><span>Operaciones realizadas</span></div>
-        <div><b class="counter" data-target="3900">+3.900</b><span>Contenedores enviados</span></div>
-        <div><b class="counter" data-target="20">+20</b><span>Países conectados</span></div>
-        <div class="stats-heading"><b>Group One</b><span>En cifras</span></div>
+        <div>
+          <b class="counter" data-target="800">+800</b>
+          <span>Operaciones realizadas</span>
+        </div>
+
+        <div>
+          <b class="counter" data-target="3900">+3.900</b>
+          <span>Contenedores enviados</span>
+        </div>
+
+        <div>
+          <b class="counter" data-target="20">+20</b>
+          <span>Países conectados</span>
+        </div>
+
+        <div class="stats-heading">
+          <b>Group One</b>
+          <span>En cifras</span>
+        </div>
       </div>
     </section>
 
@@ -111,6 +166,7 @@
       <div class="container art-container">
         <div class="premium-art service-art-box">
           <img src="assets/servicios-premium-v5.webp" alt="Nuestros servicios: transporte marítimo, terrestre, operación multimodal, carga aérea, agente aduanero, asesoría legal y seguro de carga" loading="lazy">
+
           <a class="hotspot hs-maritimo" href="transporte-maritimo.html" aria-label="Transporte marítimo"></a>
           <a class="hotspot hs-terrestre" href="transporte-terrestre.html" aria-label="Transporte terrestre"></a>
           <a class="hotspot hs-multimodal" href="operacion-multimodal.html" aria-label="Operación multimodal"></a>
@@ -135,19 +191,84 @@
           <article><div class="industry-icon alimentos"></div><span>Alimentos</span></article>
           <article><div class="industry-icon construccion"></div><span>Construcción</span></article>
 
-          <article><div class="industry-icon custom-svg"><svg viewBox="0 0 120 92" aria-hidden="true"><g fill="none" stroke="#2b3c4d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M76 18l-26 26"/><path d="M52 20l18-10 10 10-10 18"/><path d="M44 24l12 12"/><path d="M58 44l-24 24"/><path d="M28 70l-8 8"/><path d="M68 18l28 28"/><path d="M77 47l18 18"/><path d="M20 76c8-6 18-9 31-9 18 0 33 5 49 15"/></g></svg></div><span>Minería</span></article>
+          <article>
+            <div class="industry-icon custom-svg">
+              <svg viewBox="0 0 120 92" aria-hidden="true">
+                <g fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                  <path class="line-main" d="M76 18l-26 26"/>
+                  <path class="line-soft" d="M52 20l18-10 10 10-10 18"/>
+                  <path class="line-main" d="M44 24l12 12"/>
+                  <path class="line-soft" d="M58 44l-24 24"/>
+                  <path class="line-main" d="M28 70l-8 8"/>
+                  <path class="line-soft" d="M68 18l28 28"/>
+                  <path class="line-main" d="M77 47l18 18"/>
+                  <path class="line-soft" d="M20 76c8-6 18-9 31-9 18 0 33 5 49 15"/>
+                </g>
+              </svg>
+            </div>
+            <span>Minería</span>
+          </article>
 
           <article><div class="industry-icon farmaceutica"></div><span>Farmacéutica</span></article>
 
-          <article><div class="industry-icon custom-svg"><svg viewBox="0 0 120 92" aria-hidden="true"><g fill="none" stroke="#c6d4e2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M33 22h54l10 13v35H23V35z"/><path d="M40 22c0-7 8-12 20-12s20 5 20 12"/><path d="M45 39h30"/><path d="M44 49h32"/><path d="M50 59h20"/></g></svg></div><span>Textil</span></article>
+          <article>
+            <div class="industry-icon custom-svg">
+              <svg viewBox="0 0 120 92" aria-hidden="true">
+                <g fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path class="line-soft" d="M33 22h54l10 13v35H23V35z"/>
+                  <path class="line-main" d="M40 22c0-7 8-12 20-12s20 5 20 12"/>
+                  <path class="line-main" d="M45 39h30"/>
+                  <path class="line-soft" d="M44 49h32"/>
+                  <path class="line-main" d="M50 59h20"/>
+                </g>
+              </svg>
+            </div>
+            <span>Textil</span>
+          </article>
 
           <article><div class="industry-icon higiene"></div><span>Higiene</span></article>
 
-          <article><div class="industry-icon custom-svg"><svg viewBox="0 0 120 92" aria-hidden="true"><g fill="none" stroke="#d7dee6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 58h12l8-18h18l8 18h38"/><circle cx="44" cy="63" r="8"/><circle cx="82" cy="63" r="8"/><path d="M37 40l7-11h18l12 11"/><path d="M22 58V48l15-8"/></g></svg></div><span>Automotriz</span></article>
+          <article>
+            <div class="industry-icon custom-svg">
+              <svg viewBox="0 0 120 92" aria-hidden="true">
+                <g fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path class="line-soft" d="M18 58h12l8-18h18l8 18h38"/>
+                  <circle class="line-main" cx="44" cy="63" r="8"/>
+                  <circle class="line-main" cx="82" cy="63" r="8"/>
+                  <path class="line-soft" d="M37 40l7-11h18l12 11"/>
+                  <path class="line-main" d="M22 58V48l15-8"/>
+                </g>
+              </svg>
+            </div>
+            <span>Automotriz</span>
+          </article>
 
           <article><div class="industry-icon medica"></div><span>Médica</span></article>
 
-          <article><div class="industry-icon custom-svg"><svg viewBox="0 0 120 92" aria-hidden="true"><g fill="none" stroke="#cfd8e2" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 66h66l-8-24H26z"/><path d="M22 58h58"/><path d="M32 42v24"/><path d="M46 42v24"/><path d="M60 42v24"/><path d="M74 42v24"/><circle cx="92" cy="24" r="9"/><path d="M92 10v-6"/><path d="M92 44v-6"/><path d="M78 24h-6"/><path d="M112 24h-6"/><path d="M82 14l-4-4"/><path d="M102 34l-4-4"/><path d="M102 14l-4 4"/><path d="M82 34l-4 4"/></g></svg></div><span>Energética</span></article>
+          <article>
+            <div class="industry-icon custom-svg">
+              <svg viewBox="0 0 120 92" aria-hidden="true">
+                <g fill="none" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path class="line-soft" d="M18 66h66l-8-24H26z"/>
+                  <path class="line-main" d="M22 58h58"/>
+                  <path class="line-soft" d="M32 42v24"/>
+                  <path class="line-soft" d="M46 42v24"/>
+                  <path class="line-soft" d="M60 42v24"/>
+                  <path class="line-soft" d="M74 42v24"/>
+                  <circle class="line-main" cx="92" cy="24" r="9"/>
+                  <path class="line-main" d="M92 10v-6"/>
+                  <path class="line-main" d="M92 44v-6"/>
+                  <path class="line-main" d="M78 24h-6"/>
+                  <path class="line-main" d="M112 24h-6"/>
+                  <path class="line-soft" d="M82 14l-4-4"/>
+                  <path class="line-soft" d="M102 34l-4-4"/>
+                  <path class="line-soft" d="M102 14l-4 4"/>
+                  <path class="line-soft" d="M82 34l-4 4"/>
+                </g>
+              </svg>
+            </div>
+            <span>Energética</span>
+          </article>
         </div>
       </div>
     </section>
@@ -158,45 +279,112 @@
           <span>Información útil</span>
           <h2>Guía orientativa para el cliente</h2>
         </div>
+
         <p class="resources-lead">Material técnico organizado para posicionamiento y consulta, sin trasladarle la complejidad al cliente. La elección final depende de cada operación.</p>
+
         <div class="resource-grid">
-          <a href="incoterms.html"><strong>Incoterms</strong><span>Costos, riesgos y responsabilidades en comercio internacional.</span></a>
-          <a href="contenedores.html"><strong>Contenedores</strong><span>Tipos marítimos, aéreos y criterios para elegir la mejor solución.</span></a>
+          <a href="incoterms.html">
+            <strong>Incoterms</strong>
+            <span>Costos, riesgos y responsabilidades en comercio internacional.</span>
+          </a>
+
+          <a href="contenedores.html">
+            <strong>Contenedores</strong>
+            <span>Tipos marítimos, aéreos y criterios para elegir la mejor solución.</span>
+          </a>
         </div>
+
         <div class="pdf-downloads">
-          <a class="pdf-card" href="docs/Group_One_incoterms_2020.pdf" download><strong>Incoterms 2020</strong><span>Descarga orientativa para consulta.</span><span class="btn secondary dark">Descargar PDF</span></a>
-          <a class="pdf-card" href="docs/Group_One_contenedores_maritimos.pdf" download><strong>Contenedores marítimos</strong><span>Opciones de carga marítima.</span><span class="btn secondary dark">Descargar PDF</span></a>
-          <a class="pdf-card" href="docs/Group_One_contenedores_aereos.pdf" download><strong>Contenedores aéreos</strong><span>Opciones usadas en carga aérea.</span><span class="btn secondary dark">Descargar PDF</span></a>
+          <a class="pdf-card" href="docs/Group_One_incoterms_2020.pdf" download>
+            <strong>Incoterms 2020</strong>
+            <span>Descarga orientativa para consulta.</span>
+            <span class="btn secondary dark">Descargar PDF</span>
+          </a>
+
+          <a class="pdf-card" href="docs/Group_One_contenedores_maritimos.pdf" download>
+            <strong>Contenedores marítimos</strong>
+            <span>Opciones de carga marítima.</span>
+            <span class="btn secondary dark">Descargar PDF</span>
+          </a>
+
+          <a class="pdf-card" href="docs/Group_One_contenedores_aereos.pdf" download>
+            <strong>Contenedores aéreos</strong>
+            <span>Opciones usadas en carga aérea.</span>
+            <span class="btn secondary dark">Descargar PDF</span>
+          </a>
         </div>
       </div>
     </section>
 
     <section class="section contact" id="contacto">
       <div class="container">
-        <div class="section-head"><span>Contacto y oficinas</span><h2>Balvanera</h2></div>
+        <div class="section-head">
+          <span>Contacto y oficinas</span>
+          <h2>Balvanera</h2>
+        </div>
+
         <div class="contact-grid">
           <div class="office-card">
             <p><strong>Buenos Aires, Argentina.</strong></p>
             <p>Av. Callao 384, entrepiso 1</p>
             <p>CABA, Buenos Aires, Argentina</p>
             <p>Lunes a viernes de 09:00 a 18:00 hs.</p>
-            <a class="btn secondary dark" href="https://www.google.com/maps/search/?api=1&query=Av.%20Callao%20384%20entrepiso%201%20CABA" target="_blank" rel="noopener">Cómo llegar</a>
+            <a class="btn secondary dark" href="https://www.google.com/maps/dir/?api=1&destination=Av.%20Callao%20384%2C%20Balvanera%2C%20Ciudad%20Aut%C3%B3noma%20de%20Buenos%20Aires%2C%20Argentina" target="_blank" rel="noopener">Cómo llegar</a>
           </div>
-          <div class="map-card"><iframe src="https://www.google.com/maps?q=Av.%20Callao%20384%20entrepiso%201%20CABA%20Buenos%20Aires%20Argentina&output=embed" width="100%" height="340" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+          <div class="map-card">
+            <iframe src="https://www.google.com/maps?q=Av.%20Callao%20384%2C%20Balvanera%2C%20Ciudad%20Aut%C3%B3noma%20de%20Buenos%20Aires%2C%20Argentina&output=embed" width="100%" height="340" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section quote" id="cotizacion">
       <div class="container">
-        <div class="section-head"><span>Cotización</span><h2>Solicitá una cotización</h2></div>
+        <div class="section-head">
+          <span>Cotización</span>
+          <h2>Solicitá una cotización</h2>
+        </div>
+
         <form class="quote-form" id="quoteForm">
-          <div class="field"><label>Nombre *</label><input required name="nombre" type="text"></div>
-          <div class="field"><label>Empresa *</label><input required name="empresa" type="text"></div>
-          <div class="field"><label>Email *</label><input required name="email" type="email"></div>
-          <div class="field"><label>País</label><input name="pais" type="text"></div>
-          <div class="field full"><label>Servicio requerido</label><select name="servicio"><option>Marítimo</option><option>Terrestre</option><option>Aéreo</option><option>Multimodal</option><option>Agente aduanero</option><option>Asesoría legal</option><option>Seguro de carga</option></select></div>
-          <div class="field full"><label>Mensaje</label><textarea name="mensaje" rows="5" placeholder="Contanos origen, destino, tipo de carga, medidas, peso y plazo estimado."></textarea></div>
+          <div class="field">
+            <label>Nombre *</label>
+            <input required name="nombre" type="text">
+          </div>
+
+          <div class="field">
+            <label>Empresa *</label>
+            <input required name="empresa" type="text">
+          </div>
+
+          <div class="field">
+            <label>Email *</label>
+            <input required name="email" type="email">
+          </div>
+
+          <div class="field">
+            <label>País</label>
+            <input name="pais" type="text">
+          </div>
+
+          <div class="field full">
+            <label>Servicio requerido</label>
+            <select name="servicio">
+              <option>Marítimo</option>
+              <option>Terrestre</option>
+              <option>Aéreo</option>
+              <option>Multimodal</option>
+              <option>Agente aduanero</option>
+              <option>Asesoría legal</option>
+              <option>Seguro de carga</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label>Mensaje</label>
+            <textarea name="mensaje" rows="5" placeholder="Contanos origen, destino, tipo de carga, medidas, peso y plazo estimado."></textarea>
+          </div>
+
           <button class="btn primary" type="submit">Enviar consulta</button>
         </form>
       </div>
@@ -205,10 +393,38 @@
 
   <footer class="footer">
     <div class="container footer-grid">
-      <div><img src="assets/logo-group-one.webp" width="220" height="56" alt="Group One"><p><strong>Servicios integrales de comercio internacional.</strong><br>Importá y exportá sin complicaciones.</p></div>
-      <div><h3>Información útil</h3><a href="index.html">Inicio</a><a href="nosotros.html">Nosotros</a><a href="index.html#servicios">Servicios</a><a href="index.html#industrias">Industrias</a><a href="incoterms.html">Incoterms</a><a href="trabaja-con-nosotros.html">Trabaja con nosotros</a><a href="index.html#contacto">Contacto</a></div>
-      <div><h3>Servicios</h3><a href="transporte-maritimo.html">Transporte marítimo</a><a href="transporte-terrestre.html">Transporte terrestre</a><a href="carga-aerea.html">Carga aérea</a><a href="agente-aduanero.html">Agente aduanero</a><a href="seguro-de-carga.html">Seguro de carga</a><a href="asesoria-legal.html">Asesoría legal</a><a href="operacion-multimodal.html">Operación multimodal</a></div>
-      <div><h3>Contacto</h3><p>Av. Callao 384, entrepiso 1<br>CABA, Buenos Aires, Argentina</p><a class="wa-link" href="https://wa.me/5491154158757?text=Hola%20Group%20One%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">Solicitar cotización</a></div>
+      <div>
+        <img src="assets/logo-group-one.webp" width="220" height="56" alt="Group One">
+        <p><strong>Servicios integrales de comercio internacional.</strong><br>Importá y exportá sin complicaciones.</p>
+      </div>
+
+      <div>
+        <h3>Información útil</h3>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#industrias">Industrias</a>
+        <a href="incoterms.html">Incoterms</a>
+        <a href="trabaja-con-nosotros.html">Trabaja con nosotros</a>
+        <a href="index.html#contacto">Contacto</a>
+      </div>
+
+      <div>
+        <h3>Servicios</h3>
+        <a href="transporte-maritimo.html">Transporte marítimo</a>
+        <a href="transporte-terrestre.html">Transporte terrestre</a>
+        <a href="carga-aerea.html">Carga aérea</a>
+        <a href="agente-aduanero.html">Agente aduanero</a>
+        <a href="seguro-de-carga.html">Seguro de carga</a>
+        <a href="asesoria-legal.html">Asesoría legal</a>
+        <a href="operacion-multimodal.html">Operación multimodal</a>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <p>Av. Callao 384, entrepiso 1<br>CABA, Buenos Aires, Argentina</p>
+        <a class="wa-link" href="https://wa.me/5491154158757?text=Hola%20Group%20One%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">Solicitar cotización</a>
+      </div>
     </div>
   </footer>
 

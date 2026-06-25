@@ -13,6 +13,7 @@ if(counters.length){
     const target=parseInt(el.dataset.target,10);
     const duration=1100;
     const start=performance.now();
+
     const tick=now=>{
       const progress=Math.min((now-start)/duration,1);
       const eased=1-Math.pow(1-progress,3);
@@ -20,6 +21,7 @@ if(counters.length){
       el.textContent='+'+formatNumber(value);
       if(progress<1) requestAnimationFrame(tick);
     };
+
     requestAnimationFrame(tick);
   };
 
@@ -32,6 +34,7 @@ if(counters.length){
         }
       });
     },{threshold:.45});
+
     counters.forEach(counter=>observer.observe(counter));
   }else{
     counters.forEach(runCounter);
@@ -49,6 +52,7 @@ function openWhatsAppMessage(message){
 if(q){
   q.addEventListener('submit',e=>{
     e.preventDefault();
+
     const data=new FormData(q);
     const nombre=(data.get('nombre')||'').toString().trim();
     const empresa=(data.get('empresa')||'').toString().trim();
