@@ -6,34 +6,163 @@
   <title>Carta de garantía | Group One</title>
   <meta name="description" content="Información sobre carta de garantía y documentación operativa.">
   <meta name="theme-color" content="#081421">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  
+
+  <style>
+    .topbar{position:relative;height:96px}
+    .brand{
+      position:relative;
+      height:76px;
+      width:286px;
+      overflow:hidden;
+      display:flex;
+      align-items:flex-start;
+      flex:0 0 286px;
+    }
+    .brand img{
+      height:92px;
+      width:auto;
+      max-width:none;
+      transform:translateY(-2px);
+    }
+    .brand::before{
+      content:"";
+      position:absolute;
+      left:92px;
+      right:0;
+      bottom:6px;
+      height:19px;
+      background:#07111d;
+      z-index:2;
+    }
+    .brand::after{
+      content:"COMERCIO INTERNACIONAL";
+      position:absolute;
+      left:92px;
+      bottom:7px;
+      z-index:3;
+      color:#e43732;
+      font-size:10px;
+      line-height:1;
+      font-weight:950;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .main-nav{gap:18px}
+    .main-nav a{font-size:14px}
+    .whatsapp-float{width:58px;height:58px;padding:0;border-radius:999px;display:flex;align-items:center;justify-content:center;background:#25D366;box-shadow:0 12px 28px rgba(0,0,0,.35),0 0 20px rgba(37,211,102,.35)}
+    .whatsapp-float svg{width:30px;height:30px;display:block;fill:#fff}
+    .whatsapp-float .wa-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .footer-grid{align-items:start}
+    .footer-grid>div:first-child p{margin-top:10px}
+    .footer-grid a{display:block;margin:8px 0}
+    @media(max-width:980px){
+      .topbar{height:auto;min-height:78px}
+      .brand{height:60px;width:224px;flex-basis:224px}
+      .brand img{height:78px;transform:translateY(-2px)}
+      .brand::before{left:78px;bottom:3px;height:16px}
+      .brand::after{left:78px;bottom:4px;font-size:8px}
+      .main-nav a{font-size:13px}
+    }
+    @media(max-width:560px){
+      .brand{height:52px;width:188px;flex-basis:188px}
+      .brand img{height:68px}
+      .brand::before{left:68px;bottom:2px;height:14px}
+      .brand::after{left:68px;bottom:3px;font-size:7px}
+    }
+  </style>
+
 </head>
+
 <body>
   <header class="topbar">
-  <a class="brand" href="index.html" aria-label="Group One inicio"><img src="assets/logo-group-one.webp" width="300" height="76" alt="Group One Logística Internacional"></a>
-  <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-  <nav class="main-nav" aria-label="Navegación principal">
-    <a href="incoterms.html">Incoterms</a>
-    <a href="contenedores.html">Contenedores</a>
-    <a href="nosotros.html">Nosotros</a>
-    <a href="carta-de-garantia.html">Carta de garantía</a>
-    <a href="trabaja-con-nosotros.html">Trabaja con nosotros</a>
-  </nav>
-</header>
-  <a class="whatsapp-float" href="#cotizacion" aria-label="Consultar por WhatsApp">WhatsApp</a>
-  <main><section class="page-hero"><div class="container"><span>Documentación</span><h1>Carta de garantía</h1><p>Información de respaldo documental para operaciones que lo requieran.</p></div></section><section class="page-content"><div class="container content-grid"><article><h2>Cuándo puede requerirse</h2><p>En determinadas operaciones, operadores o destinos pueden solicitar documentación adicional de respaldo según el tipo de carga, la condición comercial o la etapa logística.</p></article><article><h2>Gestión y acompañamiento</h2><p>Group One acompaña al cliente en la revisión de requisitos documentales y en la coordinación de la información necesaria para evitar demoras operativas.</p></article><article><h2>Consulta puntual</h2><p>Como cada operación puede tener condiciones diferentes, recomendamos consultar el caso específico antes de avanzar.</p></article></div></div></section><section class="page-cta"><div class="container"><h2>¿Necesitás coordinar una operación?</h2><p>Contanos origen, destino, tipo de carga y plazo estimado. Te ayudamos a definir el camino más eficiente.</p><a class="btn primary" href="index.html#cotizacion">Solicitar cotización</a></div></section></main>
+    <a class="brand" href="index.html" aria-label="Group One inicio">
+      <img src="assets/logo-group-one.webp" width="300" height="76" alt="Group One Comercio Internacional">
+    </a>
+
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#industrias">Industrias</a>
+      <a href="incoterms.html">Incoterms</a>
+      <a href="trabaja-con-nosotros.html">Trabaja con nosotros</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <a class="whatsapp-float" href="https://wa.me/5491154158757?text=Hola%20Group%20One%2C%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M27.05 4.9A15.67 15.67 0 0 0 16 0C7.16 0 0 7.16 0 16a15.9 15.9 0 0 0 2.17 8.02L0 32l8.2-2.14A15.95 15.95 0 0 0 16 32c8.84 0 16-7.16 16-16 0-4.27-1.66-8.28-4.95-11.1ZM16 29.25c-2.43 0-4.8-.65-6.88-1.88l-.5-.3-4.86 1.27 1.3-4.73-.33-.5A13.2 13.2 0 0 1 2.75 16C2.75 8.67 8.67 2.75 16 2.75c3.53 0 6.84 1.38 9.32 3.86A13.1 13.1 0 0 1 29.25 16c0 7.33-5.92 13.25-13.25 13.25Zm7.26-9.95c-.4-.2-2.34-1.16-2.7-1.29-.36-.13-.62-.2-.88.2-.26.39-1.01 1.28-1.24 1.54-.23.26-.46.3-.85.1-.39-.2-1.64-.6-3.13-1.91-1.16-1.04-1.95-2.33-2.18-2.72-.23-.39-.02-.6.17-.79.17-.17.39-.46.59-.69.2-.23.26-.39.39-.66.13-.26.07-.49-.03-.69-.1-.2-.88-2.13-1.2-2.91-.31-.76-.63-.66-.88-.67h-.75c-.26 0-.69.1-1.05.49-.36.39-1.38 1.35-1.38 3.29s1.41 3.82 1.61 4.08c.2.26 2.77 4.23 6.72 5.94.94.4 1.67.64 2.24.82.94.3 1.8.26 2.48.16.76-.11 2.34-.96 2.67-1.89.33-.92.33-1.71.23-1.88-.1-.16-.36-.26-.75-.46Z"/>
+    </svg>
+    <span class="wa-label">WhatsApp</span>
+  </a>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span>Documentación</span>
+        <h1>Carta de garantía</h1>
+        <p>Información de respaldo documental para operaciones que lo requieran.</p>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="container content-grid">
+        <article><h2>Cuándo puede requerirse</h2><p>En determinadas operaciones, operadores o destinos pueden solicitar documentación adicional de respaldo según tipo de carga, condición comercial o etapa logística.</p></article><article><h2>Gestión y acompañamiento</h2><p>Group One acompaña al cliente en la revisión de requisitos documentales y en la coordinación de la información necesaria para evitar demoras operativas.</p></article><article><h2>Consulta puntual</h2><p>Como cada operación puede tener condiciones diferentes, recomendamos consultar el caso específico antes de avanzar.</p></article>
+      </div>
+    </section>
+    
+    <section class="page-cta">
+      <div class="container">
+        <h2>¿Necesitás coordinar una operación?</h2>
+        <p>Contanos origen, destino, tipo de carga y plazo estimado. Te ayudamos a definir el camino más eficiente.</p>
+        <a class="btn primary" href="https://wa.me/5491154158757?text=Hola%20Group%20One%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">Solicitar cotización</a>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <img src="assets/logo-group-one.webp" width="220" height="56" alt="Group One">
-      <p>Freight Forwarders y Courier Internacional. Importá y exportá sin complicaciones.</p>
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/logo-group-one.webp" width="220" height="56" alt="Group One">
+        <p><strong>Servicios integrales de comercio internacional.</strong><br>Importá y exportá sin complicaciones.</p>
+      </div>
+
+      <div>
+        <h3>Información útil</h3>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#industrias">Industrias</a>
+        <a href="incoterms.html">Incoterms</a>
+        <a href="trabaja-con-nosotros.html">Trabaja con nosotros</a>
+        <a href="index.html#contacto">Contacto</a>
+      </div>
+
+      <div>
+        <h3>Servicios</h3>
+        <a href="transporte-maritimo.html">Transporte marítimo</a>
+        <a href="transporte-terrestre.html">Transporte terrestre</a>
+        <a href="carga-aerea.html">Carga aérea</a>
+        <a href="agente-aduanero.html">Agente aduanero</a>
+        <a href="seguro-de-carga.html">Seguro de carga</a>
+        <a href="asesoria-legal.html">Asesoría legal</a>
+        <a href="operacion-multimodal.html">Operación multimodal</a>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <p>Av. Callao 384, entrepiso 1<br>CABA, Buenos Aires, Argentina</p>
+        <a class="wa-link" href="https://wa.me/5491154158757?text=Hola%20Group%20One%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">Solicitar cotización</a>
+      </div>
     </div>
-    <div><h3>Información útil</h3><a href="incoterms.html">Incoterms</a><a href="contenedores.html">Contenedores</a><a href="nosotros.html">Nosotros</a><a href="carta-de-garantia.html">Carta de garantía</a></div>
-    <div><h3>Servicios</h3><a href="transporte-maritimo.html">Transporte marítimo</a><a href="transporte-terrestre.html">Transporte terrestre</a><a href="carga-aerea.html">Carga aérea</a><a href="agente-aduanero.html">Agente aduanero</a><a href="seguro-de-carga.html">Seguro de carga</a></div>
-    <div><h3>Contacto</h3><p>Av. Callao 384, entrepiso 1<br>CABA, Buenos Aires, Argentina</p><a href="index.html#cotizacion">Solicitar cotización</a></div>
-  </div>
-</footer>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

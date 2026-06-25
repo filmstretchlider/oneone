@@ -1,16 +1,26 @@
 Archivos incluidos:
 - index.html
+- nosotros.html
+- incoterms.html
+- contenedores.html
+- carta-de-garantia.html
+- trabaja-con-nosotros.html
+- transporte-maritimo.html
+- transporte-terrestre.html
+- operacion-multimodal.html
+- carga-aerea.html
+- agente-aduanero.html
+- asesoria-legal.html
+- seguro-de-carga.html
 - script.js
+- robots.txt
+- sitemap.xml
 - assets/favicon.svg
 
-Reemplazar/subir:
-1. index.html en la raíz del repo.
-2. script.js en la raíz del repo.
-3. assets/favicon.svg dentro de la carpeta assets.
-
-Cambios v7:
-- Se corrigió el cambio anterior.
-- El GROUP ONE blanco del hero vuelve al tamaño correcto.
-- Se agrandó la frase "Comercio internacional" encima del GROUP ONE del hero.
-- Se agrandó el logo/isotipo del header y se recortó la frase inferior del archivo de logo para que no moleste.
-- Se mantienen WhatsApp, formulario, mapa, favicon y cifras.
+Cambios:
+- Header igualado en todas las páginas.
+- Menú completo en todas las páginas: Inicio, Nosotros, Servicios, Industrias, Incoterms, Trabaja con nosotros, Contacto.
+- Footer igualado en todas las páginas con el mismo footer de home.
+- Logo del header tapa "Logística internacional" y muestra "Comercio internacional".
+- Eliminadas apariciones de "Group One S.A." / "Group One SA".
+- WhatsApp y formulario conservados.

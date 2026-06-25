@@ -4,168 +4,82 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nosotros | Group One</title>
-  <meta name="description" content="Group One S.A. es una empresa argentina especializada en servicios integrales de comercio internacional, importaciones, exportaciones, logística internacional y gestión aduanera.">
+  <meta name="description" content="Group One es una empresa argentina especializada en servicios integrales de comercio internacional, importaciones, exportaciones, logística internacional y gestión aduanera.">
   <meta name="theme-color" content="#081421">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 
   <style>
-    .topbar{position:relative}
-    .main-nav{gap:18px}
-    .main-nav a{font-size:14px}
-
-    .about-company-hero{
+    .topbar{position:relative;height:96px}
+    .brand{
       position:relative;
-      min-height:520px;
-      display:flex;
-      align-items:center;
+      height:76px;
+      width:286px;
       overflow:hidden;
-      background:
-        linear-gradient(90deg,rgba(4,15,27,.88) 0%,rgba(4,15,27,.66) 44%,rgba(4,15,27,.24) 100%),
-        url("assets/nosotros-buque.jpg") center/cover no-repeat;
+      display:flex;
+      align-items:flex-start;
+      flex:0 0 286px;
     }
-
-    .about-company-hero .container{
-      position:relative;
+    .brand img{
+      height:92px;
+      width:auto;
+      max-width:none;
+      transform:translateY(-2px);
+    }
+    .brand::before{
+      content:"";
+      position:absolute;
+      left:92px;
+      right:0;
+      bottom:6px;
+      height:19px;
+      background:#07111d;
       z-index:2;
     }
-
-    .about-company-hero span{
-      display:inline-block;
-      color:#ff5c55;
-      text-transform:uppercase;
-      font-size:12px;
+    .brand::after{
+      content:"COMERCIO INTERNACIONAL";
+      position:absolute;
+      left:92px;
+      bottom:7px;
+      z-index:3;
+      color:#e43732;
+      font-size:10px;
+      line-height:1;
       font-weight:950;
-      letter-spacing:.18em;
-      margin-bottom:14px;
-    }
-
-    .about-company-hero h1{
-      font-size:clamp(42px,6.8vw,82px);
-      line-height:.92;
-      max-width:900px;
-      margin:0;
+      letter-spacing:.14em;
       text-transform:uppercase;
-      letter-spacing:-.055em;
-      font-weight:950;
-      color:#fff;
+      white-space:nowrap;
     }
-
-    .about-company-hero p{
-      font-size:clamp(18px,2.2vw,25px);
-      line-height:1.45;
-      max-width:820px;
-      margin:22px 0 0;
-      color:#eef6ff;
-      text-shadow:0 2px 10px rgba(0,0,0,.55);
-    }
-
-    .company-section{
-      background:#10171f;
-      padding:58px 0;
-    }
-
-    .company-intro{
-      max-width:1040px;
-      margin:0 auto 30px;
-      font-size:clamp(22px,3vw,34px);
-      line-height:1.25;
-      font-weight:850;
-      text-align:center;
-      color:#d9ecff;
-    }
-
-    .company-copy{
-      max-width:1050px;
-      margin:0 auto;
-      display:grid;
-      gap:18px;
-    }
-
-    .company-copy article{
-      background:#111;
-      border:1px solid rgba(255,255,255,.1);
-      border-radius:10px;
-      padding:26px;
-      box-shadow:0 16px 44px rgba(0,0,0,.25);
-    }
-
-    .company-copy article.featured{
-      background:linear-gradient(135deg,#0b2138,#111);
-      border-color:#1e4d75;
-    }
-
-    .company-copy h2{
-      margin:0 0 12px;
-      text-transform:uppercase;
-      letter-spacing:.08em;
-      font-size:18px;
-      color:#fff;
-    }
-
-    .company-copy p{
-      margin:0;
-      color:#c5d5e8;
-      line-height:1.65;
-      font-size:17px;
-    }
-
-    .company-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:16px;
-      margin-top:20px;
-    }
-
-    .company-grid article{
-      min-height:190px;
-    }
-
-    .footer-grid{
-      align-items:start;
-    }
-
-    .footer-grid > div:first-child p{
-      margin-top:10px;
-    }
-
-    .footer-grid a{
-      display:block;
-      margin:8px 0;
-    }
-
+    .main-nav{gap:18px}
+    .main-nav a{font-size:14px}
+    .whatsapp-float{width:58px;height:58px;padding:0;border-radius:999px;display:flex;align-items:center;justify-content:center;background:#25D366;box-shadow:0 12px 28px rgba(0,0,0,.35),0 0 20px rgba(37,211,102,.35)}
+    .whatsapp-float svg{width:30px;height:30px;display:block;fill:#fff}
+    .whatsapp-float .wa-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .footer-grid{align-items:start}
+    .footer-grid>div:first-child p{margin-top:10px}
+    .footer-grid a{display:block;margin:8px 0}
     @media(max-width:980px){
+      .topbar{height:auto;min-height:78px}
+      .brand{height:60px;width:224px;flex-basis:224px}
+      .brand img{height:78px;transform:translateY(-2px)}
+      .brand::before{left:78px;bottom:3px;height:16px}
+      .brand::after{left:78px;bottom:4px;font-size:8px}
       .main-nav a{font-size:13px}
-      .about-company-hero{min-height:500px}
-      .company-grid{grid-template-columns:1fr}
     }
-
     @media(max-width:560px){
-      .about-company-hero{
-        min-height:470px;
-        background:
-          linear-gradient(90deg,rgba(4,15,27,.92) 0%,rgba(4,15,27,.72) 100%),
-          url("assets/nosotros-buque.jpg") center/cover no-repeat;
-      }
-
-      .about-company-hero h1{
-        font-size:42px;
-      }
-
-      .company-section{
-        padding:42px 0;
-      }
-
-      .company-copy article{
-        padding:20px;
-      }
+      .brand{height:52px;width:188px;flex-basis:188px}
+      .brand img{height:68px}
+      .brand::before{left:68px;bottom:2px;height:14px}
+      .brand::after{left:68px;bottom:3px;font-size:7px}
     }
   </style>
+
 </head>
 
 <body>
   <header class="topbar">
     <a class="brand" href="index.html" aria-label="Group One inicio">
-      <img src="assets/logo-group-one.webp" width="300" height="76" alt="Group One Logística Internacional">
+      <img src="assets/logo-group-one.webp" width="300" height="76" alt="Group One Comercio Internacional">
     </a>
 
     <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
@@ -181,62 +95,33 @@
     </nav>
   </header>
 
-  <a class="whatsapp-float" href="index.html#cotizacion" aria-label="Consultar por WhatsApp">WhatsApp</a>
+  <a class="whatsapp-float" href="https://wa.me/5491154158757?text=Hola%20Group%20One%2C%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M27.05 4.9A15.67 15.67 0 0 0 16 0C7.16 0 0 7.16 0 16a15.9 15.9 0 0 0 2.17 8.02L0 32l8.2-2.14A15.95 15.95 0 0 0 16 32c8.84 0 16-7.16 16-16 0-4.27-1.66-8.28-4.95-11.1ZM16 29.25c-2.43 0-4.8-.65-6.88-1.88l-.5-.3-4.86 1.27 1.3-4.73-.33-.5A13.2 13.2 0 0 1 2.75 16C2.75 8.67 8.67 2.75 16 2.75c3.53 0 6.84 1.38 9.32 3.86A13.1 13.1 0 0 1 29.25 16c0 7.33-5.92 13.25-13.25 13.25Zm7.26-9.95c-.4-.2-2.34-1.16-2.7-1.29-.36-.13-.62-.2-.88.2-.26.39-1.01 1.28-1.24 1.54-.23.26-.46.3-.85.1-.39-.2-1.64-.6-3.13-1.91-1.16-1.04-1.95-2.33-2.18-2.72-.23-.39-.02-.6.17-.79.17-.17.39-.46.59-.69.2-.23.26-.39.39-.66.13-.26.07-.49-.03-.69-.1-.2-.88-2.13-1.2-2.91-.31-.76-.63-.66-.88-.67h-.75c-.26 0-.69.1-1.05.49-.36.39-1.38 1.35-1.38 3.29s1.41 3.82 1.61 4.08c.2.26 2.77 4.23 6.72 5.94.94.4 1.67.64 2.24.82.94.3 1.8.26 2.48.16.76-.11 2.34-.96 2.67-1.89.33-.92.33-1.71.23-1.88-.1-.16-.36-.26-.75-.46Z"/>
+    </svg>
+    <span class="wa-label">WhatsApp</span>
+  </a>
 
   <main>
-    <section class="about-company-hero">
+    <section class="page-hero">
       <div class="container">
         <span>Nosotros</span>
         <h1>Una empresa argentina con proyección internacional</h1>
-        <p>Servicios integrales de comercio internacional para empresas, emprendedores e inversores.</p>
+        <p>Group One es una empresa especializada en servicios integrales de comercio internacional, creada para acompañar a empresas, emprendedores e inversores en todas las etapas de sus operaciones globales.</p>
       </div>
     </section>
 
-    <section class="company-section">
-      <div class="container">
-        <p class="company-intro">Group One S.A. es una empresa especializada en servicios integrales de comercio internacional, creada para acompañar a empresas, emprendedores e inversores en todas las etapas de sus operaciones globales.</p>
-
-        <div class="company-copy">
-          <article class="featured">
-            <h2>Trayectoria y estructura</h2>
-            <p>Con más de 15 años de trayectoria acumulada en comercio exterior, logística internacional, gestión aduanera, abastecimiento global, importaciones, exportaciones y desarrollo de negocios, integramos bajo una misma estructura comercial a profesionales y empresas altamente especializadas, permitiendo ofrecer soluciones completas, eficientes y adaptadas a cada cliente.</p>
-          </article>
-
-          <article>
-            <h2>Un único punto de contacto</h2>
-            <p>Nuestro objetivo es simplificar el comercio internacional. Por eso, actuamos como un único punto de contacto y coordinación, brindando asesoramiento estratégico, planificación operativa y ejecución integral de cada proyecto, incluso para empresas que no poseen experiencia previa en importación o exportación.</p>
-          </article>
-
-          <article>
-            <h2>Red de socios estratégicos</h2>
-            <p>A través de una red de socios estratégicos, agentes internacionales, operadores logísticos, despachantes de aduana, estudios contables, especialistas legales y consultores de negocios, gestionamos cada etapa de la operación: desde la búsqueda y validación de proveedores, negociación internacional y desarrollo de productos, hasta la logística, nacionalización, distribución y puesta en marcha comercial.</p>
-          </article>
-
-          <div class="company-grid">
-            <article>
-              <h2>Crecimiento accesible</h2>
-              <p>En Group One creemos que el comercio internacional debe ser una herramienta de crecimiento accesible para cualquier empresa.</p>
-            </article>
-
-            <article>
-              <h2>Acompañamiento permanente</h2>
-              <p>Trabajamos con un enfoque basado en la transparencia, la planificación y el acompañamiento permanente, convirtiéndonos en un verdadero socio estratégico para nuestros clientes.</p>
-            </article>
-
-            <article>
-              <h2>Equipo especializado</h2>
-              <p>Nuestro equipo está conformado por especialistas con amplia experiencia en comercio exterior, logística, finanzas, desarrollo comercial, marketing y gestión empresarial, comprometidos con brindar soluciones concretas y resultados sostenibles en cada proyecto.</p>
-            </article>
-          </div>
-        </div>
+    <section class="page-content">
+      <div class="container content-grid">
+        <article><h2>Trayectoria y estructura</h2><p>Con más de 15 años de trayectoria acumulada en comercio exterior, logística internacional, gestión aduanera, abastecimiento global, importaciones, exportaciones y desarrollo de negocios, integramos bajo una misma estructura comercial a profesionales y empresas altamente especializadas, permitiendo ofrecer soluciones completas, eficientes y adaptadas a cada cliente.</p></article><article><h2>Un único punto de contacto</h2><p>Nuestro objetivo es simplificar el comercio internacional. Por eso, actuamos como un único punto de contacto y coordinación, brindando asesoramiento estratégico, planificación operativa y ejecución integral de cada proyecto, incluso para empresas que no poseen experiencia previa en importación o exportación.</p></article><article><h2>Red de socios estratégicos</h2><p>A través de una red de socios estratégicos, agentes internacionales, operadores logísticos, despachantes de aduana, estudios contables, especialistas legales y consultores de negocios, gestionamos cada etapa de la operación: desde la búsqueda y validación de proveedores, negociación internacional y desarrollo de productos, hasta la logística, nacionalización, distribución y puesta en marcha comercial.</p></article><article><h2>Crecimiento accesible</h2><p>En Group One creemos que el comercio internacional debe ser una herramienta de crecimiento accesible para cualquier empresa.</p></article><article><h2>Acompañamiento permanente</h2><p>Trabajamos con un enfoque basado en la transparencia, la planificación y el acompañamiento permanente, convirtiéndonos en un verdadero socio estratégico para nuestros clientes.</p></article><article><h2>Equipo especializado</h2><p>Nuestro equipo está conformado por especialistas con amplia experiencia en comercio exterior, logística, finanzas, desarrollo comercial, marketing y gestión empresarial, comprometidos con brindar soluciones concretas y resultados sostenibles en cada proyecto.</p></article>
       </div>
     </section>
-
+    
     <section class="page-cta">
       <div class="container">
         <h2>¿Necesitás coordinar una operación?</h2>
         <p>Contanos origen, destino, tipo de carga y plazo estimado. Te ayudamos a definir el camino más eficiente.</p>
-        <a class="btn primary" href="index.html#cotizacion">Solicitar cotización</a>
+        <a class="btn primary" href="https://wa.me/5491154158757?text=Hola%20Group%20One%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">Solicitar cotización</a>
       </div>
     </section>
   </main>
@@ -273,7 +158,7 @@
       <div>
         <h3>Contacto</h3>
         <p>Av. Callao 384, entrepiso 1<br>CABA, Buenos Aires, Argentina</p>
-        <a href="index.html#cotizacion">Solicitar cotización</a>
+        <a class="wa-link" href="https://wa.me/5491154158757?text=Hola%20Group%20One%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">Solicitar cotización</a>
       </div>
     </div>
   </footer>
