@@ -13,7 +13,6 @@ if(counters.length){
     const target=parseInt(el.dataset.target,10);
     const duration=1100;
     const start=performance.now();
-
     const tick=now=>{
       const progress=Math.min((now-start)/duration,1);
       const eased=1-Math.pow(1-progress,3);
@@ -21,7 +20,6 @@ if(counters.length){
       el.textContent='+'+formatNumber(value);
       if(progress<1) requestAnimationFrame(tick);
     };
-
     requestAnimationFrame(tick);
   };
 
@@ -34,17 +32,42 @@ if(counters.length){
         }
       });
     },{threshold:.45});
-
     counters.forEach(counter=>observer.observe(counter));
   }else{
     counters.forEach(runCounter);
   }
 }
 
+const WHATSAPP_NUMBER='5491154158757';
 const q=document.getElementById('quoteForm');
+
+function openWhatsAppMessage(message){
+  const url=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  window.open(url,'_blank');
+}
+
 if(q){
   q.addEventListener('submit',e=>{
     e.preventDefault();
-    alert('Consulta preparada. Falta conectar el email o WhatsApp final para enviar automáticamente.');
+    const data=new FormData(q);
+    const nombre=(data.get('nombre')||'').toString().trim();
+    const empresa=(data.get('empresa')||'').toString().trim();
+    const email=(data.get('email')||'').toString().trim();
+    const pais=(data.get('pais')||'').toString().trim();
+    const servicio=(data.get('servicio')||'').toString().trim();
+    const mensaje=(data.get('mensaje')||'').toString().trim();
+
+    const text=[
+      'Hola Group One, quiero solicitar una cotización.',
+      '',
+      `Nombre: ${nombre}`,
+      `Empresa: ${empresa}`,
+      `Email: ${email}`,
+      `País: ${pais || '-'}`,
+      `Servicio requerido: ${servicio || '-'}`,
+      `Mensaje: ${mensaje || '-'}`
+    ].join('\n');
+
+    openWhatsAppMessage(text);
   });
 }

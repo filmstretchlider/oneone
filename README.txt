@@ -1,10 +1,7 @@
 Archivos incluidos:
+- index.html
+- script.js
 
-- nosotros.html
-- assets/nosotros-buque.jpg
-
-Subir/reemplazar:
-1. nosotros.html en la raíz del repo.
-2. assets/nosotros-buque.jpg dentro de la carpeta assets.
-
-No modifica index.html ni styles.css.
+Reemplazar en la raíz del proyecto:
+1. index.html
+2. script.js
